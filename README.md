@@ -28,15 +28,14 @@ Follow the official instruction [here](https://milvus.io/docs/prerequisite-docke
 
 **Ollama Installation:**
 ```bash
-# Install Ollama
 curl -fsSL https://ollama.ai/install.sh | sh
 
-# Start Ollama service
 ollama serve
 
-# Pull required model
 ollama pull llama3.2:3b
 ```
+
+or see the the official page [here](https://ollama.com/download).
 
 ### 2. Prepare Your Data
 Place your input text file at `./data/doc.txt` or modify the `INPUT_TEXT_FILE` path in `vdb_gen.py`.
@@ -57,6 +56,8 @@ This will:
 ```bash
 streamlit run app.py
 ```
+
+![alt text](rag-gmsh.png)
 
 ## Configuration
 
